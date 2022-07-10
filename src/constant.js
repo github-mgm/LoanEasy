@@ -1,4 +1,3 @@
-const MAHAK = "Goyal";
-const DATABASE_URL = ""
+const DATABASE_URL = "mongodb://localhost:27017"
 
-export default {MAHAK, DATABASE_URL}
+export default DATABASE_URL

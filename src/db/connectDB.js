@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-import {MAHAK, DATABASE_URL} from './connectDB';
+import DATABASE_URL from '../constant.js';
+
 
 const connectDB = async (DATABASE_URL) => {
     try {
@@ -16,3 +17,4 @@ const connectDB = async (DATABASE_URL) => {
       console.log(err);
     }
   };
+  export default connectDB
