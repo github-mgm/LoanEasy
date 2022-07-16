@@ -1,14 +1,7 @@
 import mongoose from 'mongoose';
-import DATABASE_URL from '../constant.js';
 
-
-const connectDB = async (DATABASE_URL) => {
+const connectDB = async (DATABASE_URL,DB_OPTIONS={'dbName':'LoanEasy'}) => {
     try {
-  
-      const DB_OPTIONS = {
-        dbName : 'loans'
-      }
-  
       await mongoose.connect(DATABASE_URL, DB_OPTIONS);
       console.log("Connected Successfully");
   
